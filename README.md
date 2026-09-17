@@ -6,6 +6,10 @@ Visitors never see it. For them the script reads one browser key and exits witho
 
 Works on any static HTML site: hand-written, Claude Code, Lovable, Bolt, v0, Astro, Hugo, Eleventy, exported Webflow, a WordPress site turned static. No markup changes required.
 
+## Try it first
+
+Seven demo sites at https://thebrainer.co/#try run this exact script in demo mode. Tap **Change something**, say what to change, tap a photo to swap it, tap any text and type. Nothing is saved there.
+
 ## Install
 
 Add this before `</body>` on every page:
@@ -14,7 +18,7 @@ Add this before `</body>` on every page:
 <script src="https://edit.thebrainer.co/edit.js" data-site="YOUR_SITE_KEY" defer></script>
 ```
 
-Get a site key by registering the site's hostname at https://thebrainer.co (one site free for life). The response includes the key and an **owner link**:
+Site keys open on 21 September 2026. Until then, reserve a founding place at https://thebrainer.co (one site free for life for the first 100 builders) and try the editor on the demo sites at https://thebrainer.co/#try. Registering a site gives you the key and an **owner link**:
 
 ```
 https://www.example.com/?admin=8f2c4b7e91a0d3f6c5b2e1a4
