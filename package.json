@@ -1,0 +1,30 @@
+{
+  "name": "@thebrainer/edit",
+  "version": "0.1.0",
+  "description": "Smart Edit by The Brainer: one script tag that lets a site owner edit their own static site in plain words, saved as versions.",
+  "main": "edit.js",
+  "files": [
+    "edit.js",
+    "README.md",
+    "SKILL.md",
+    "example"
+  ],
+  "keywords": [
+    "static-site",
+    "cms",
+    "handover",
+    "editable",
+    "client-editing",
+    "claude-code",
+    "lovable"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebrainer-co/edit"
+  },
+  "scripts": {
+    "check": "node --check edit.js"
+  },
+  "homepage": "https://thebrainer.co"
+}

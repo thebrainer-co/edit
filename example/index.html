@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Northwind Plumbing</title>
+<link rel="stylesheet" href="/assets/edit.css">
+<style>
+  body{margin:0;font:17px/1.5 system-ui,sans-serif;color:#1c1b16}
+  header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
+  nav a{margin-left:16px;color:#004f46;text-decoration:none}
+  .hero{min-height:320px;background:#dfe8e3 url(hero.jpg) center/cover;display:flex;align-items:flex-end;padding:24px}
+  .hero h1{background:#fff;padding:12px 18px;margin:0;border-radius:8px}
+  main{max-width:720px;margin:0 auto;padding:24px}
+  .btn{display:inline-block;background:#004f46;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none}
+</style>
+</head>
+<body>
+<header><strong>Northwind Plumbing</strong><nav><a href="/">Home</a><a href="/services/">Services</a><a href="/contact/">Contact</a></nav></header>
+<section class="hero"><h1 data-edit="hero.title">Plumbers in Leeds since 1998</h1></section>
+<main>
+  <p data-edit="intro">Boilers, bathrooms and emergency repairs across Leeds and Wakefield. Open Monday to Friday, 8 to 6.</p>
+  <img data-edit-img="van" src="van.jpg" alt="Our van" width="720" height="400">
+  <p><a class="btn" href="/contact/">Get a quote</a></p>
+  <div data-edit-ignore><small>Registered in England no. 1234567. VAT GB 123 4567 89.</small></div>
+</main>
+<!-- the only line the builder adds: -->
+<script src="https://edit.thebrainer.co/edit.js" data-site="SITE_KEY" data-brand="Northwind Studio" defer></script>
+</body>
+</html>
