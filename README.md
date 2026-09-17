@@ -18,7 +18,7 @@ Add this before `</body>` on every page:
 <script src="https://edit.thebrainer.co/edit.js" data-site="YOUR_SITE_KEY" defer></script>
 ```
 
-Site keys open on 21 September 2026. Until then, reserve a founding place at https://thebrainer.co (one site free for life for the first 100 builders) and try the editor on the demo sites at https://thebrainer.co/#try. Registering a site gives you the key and an **owner link**:
+Sign in at https://thebrainer.co/app with your email (no password, a link is sent), register the site's hostname, and you get the site key and the install tag. Add an editor by email and they receive an **owner link**:
 
 ```
 https://www.example.com/?admin=8f2c4b7e91a0d3f6c5b2e1a4
@@ -71,12 +71,9 @@ None is needed. The script finds text blocks, images and layout regions by walki
 
 **Sites hosted on the control plane** (Autoserve sites, or sites you upload): Save hardlink-copies the current version to `vN+1`, rewrites only the files that changed, and flips the `current` pointer. Old versions stay intact and can be restored.
 
-**Sites hosted elsewhere** (Netlify, Vercel, Cloudflare Pages, GitHub Pages, your own server): register a write-back target when you register the site.
+**Sites in a git repository** (Netlify, Vercel, Cloudflare Pages, GitHub Pages, Lovable's GitHub sync, your own server): give the repository URL with access when you register the site, for GitHub a fine-grained token with Contents read and write on that one repository, pasted into the URL as `https://TOKEN@github.com/you/site.git`. Every save is a commit "Edit by The Brainer: …": text replaced in the page file (for Vite and Lovable projects the text is found in `src/`), uploaded images added under `assets/uploads/` (or `public/assets/uploads/`), style rules appended to `assets/edit.css` (or `public/edit.css`). Your existing deploy runs. The commit history is the owner's version history.
 
-- `git`: the control plane commits the change to the site's repository (text replaced in the HTML file, uploaded images added under `assets/uploads/`, style rules appended to `assets/edit.css`). Your existing deploy runs. The commit history is the owner's version history.
-- `webhook`: the control plane POSTs the change record (below) to your URL and you apply it however you like.
-
-Write-back for foreign hosts is on the roadmap for the control plane and not yet live. Until then, self-host the backend (see API) or host the site with us.
+**Sites hosted with us:** choose "host it with us" when registering, upload a zip of the site from the dashboard, point the hostname at our server. Save writes a new version and keeps every earlier one.
 
 ## For Claude Code, Lovable and Bolt users
 

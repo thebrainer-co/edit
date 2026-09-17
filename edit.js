@@ -8,7 +8,7 @@
   var me = document.currentScript || (function () { var s = document.getElementsByTagName('script'); return s[s.length - 1]; })();
   var ds = (me && me.dataset) || {};
   var SITE = ds.site; if (!SITE) return;
-  var API = (ds.api || (me && me.src ? me.src.replace(/\/[^\/]*$/, '') : '')).replace(/\/$/, '');
+  var API = (ds.api || (me && me.src ? me.src.replace(/\/[^\/]*$/, '') + '/v1' : '/v1')).replace(/\/$/, '');  // the control plane lives under /v1 on the script host
   var PARAM = ds.adminParam || 'admin', KEY = 'hv_adm_' + SITE, BRAND = ds.brand || '', LANG = ds.lang || document.documentElement.lang || '';
   var ADMIN = ''; try { ADMIN = localStorage.getItem(KEY) || ''; } catch (e) {}
   try { var sp = new URLSearchParams(location.search); var t = sp.get(PARAM);
