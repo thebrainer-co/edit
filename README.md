@@ -62,7 +62,7 @@ None is needed. The script finds text blocks, images and layout regions by walki
 | `data-site` | required | Site key from the control plane |
 | `data-api` | the script's own origin and path | Base URL of the backend (see API) |
 | `data-brand` | none | Your studio name, shown in the panel header ("by Northwind Studio") |
-| `data-color`, `data-paper` | `#004F46`, `#F7F2E7` | Panel colours, so it can match your client's site |
+| `data-color`, `data-paper`, `data-ink`, `data-surface` | acid on black | Panel colours, so it can match your client's site |
 | `data-lang` | page `lang` | Language for voice input and replies |
 | `data-admin-param` | `admin` | Query parameter name used by the owner link |
 | `data-slider` | `.autoserve-slider,[data-edit-slider]` | Selector for slideshows the owner may slow down or speed up |
